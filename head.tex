@@ -1,0 +1,55 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[top=12ex, bottom=12ex, left=9ex, right=9ex, showframe=false]{geometry}
+\linespread{1.8}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{\fancyplain{}{Yuandong Li}}
+\rhead{\fancyplain{}{\leftmark}}
+\cfoot{\fancyplain{}{\thepage}}
+
+\usepackage{amsmath, amsthm, amsfonts}
+\usepackage{enumerate}
+\usepackage{verbatim}
+\usepackage{color}
+
+\newtheorem{proposition}{Proposition}[subsection]
+\newtheorem{lemma}[proposition]{Lemma}
+\newtheorem{theorem}[proposition]{Theorem}
+\newtheorem{corollary}[proposition]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[subsection]
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}
+\newtheorem{recall}{Recall}
+\newtheorem{example}{Example}
+\newtheorem{exercise}{\textcolor{magenta}{Exercise}}[]
+\newenvironment{solution}{\begin{proof}[Solution]}{\end{proof}}
+\newenvironment{exerlist}{\bfseries{EXERCISE}\setcounter{exercise}{0}\begin{enumerate}[\textcolor{magenta}{Exercise} 1]}{
+\end{enumerate}}
+
+
+
+\def\defn#1{\begin{definition}#1\end{definition}}
+\def\prop#1{\begin{proposition}#1\end{proposition}}
+\def\thm#1{\begin{theorem}#1\end{theorem}}
+\def\cor#1{\begin{corollary}#1\end{corollary}}
+\def\pf#1{\begin{proof}#1\end{proof}}
+\def\exc#1{\begin{exercise}#1\end{exercise}}
+\def\sol#1{\begin{solution}#1\end{solution}}
+\def\rec#1{\begin{recall}#1\end{recall}}
+\def\rem#1{\begin{remark}#1\end{remark}}
+\def\exer#1#2{\item #1 \sol{#2}}
+
+\def\term#1{\textbf{#1}}
+\def\1{\mathbb1}
+\def\N{\mathbb{N}}
+\def\Z{\mathbb{Z}}
+\def\R{\mathbb{R}}
+\def\C{\mathbb{C}}
+\def\Hom{\operatorname{Hom}}
+\def\Aut{\operatorname{Aut}}
+\def\Av{\operatorname{Av}}
+\def\GL{\operatorname{GL}}
+
+
